@@ -22,8 +22,7 @@
 ---
 ### Demo
 
-![Uploading cv-demo (1).gif…]()
-
+![cv-demo](https://github.com/user-attachments/assets/20854abf-6ede-4cff-b446-bbe5cc1c9dcb)
 
 
 ### Project Info
