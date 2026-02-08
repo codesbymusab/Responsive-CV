@@ -3,9 +3,27 @@
 **Responsive CV — HTML & CSS**
 
 ---
-### Demoo
+### Screenshots
 
-![cv-demo](https://github.com/user-attachments/assets/66f967e9-e6c8-4615-aef9-e838505f9f3c)
+**Dark Mode**
+
+<img width="569" height="793" alt="Screenshot 2026-02-08 200155" src="https://github.com/user-attachments/assets/8aba4c90-3fd2-487b-b2b4-0502f0e9beac" />
+
+**Light Mode**
+
+<img width="569" height="793" alt="Screenshot 2026-02-08 200415" src="https://github.com/user-attachments/assets/d44189b1-418d-47c0-94cd-cab7d4f6a04d" />
+
+**Mobile View**
+
+<img width="383" height="850" alt="Screenshot 2026-02-08 200235" src="https://github.com/user-attachments/assets/36df4b7c-97e6-44b7-9140-ef85294802be" />
+<img width="387" height="849" alt="Screenshot 2026-02-08 200244" src="https://github.com/user-attachments/assets/2f9856f7-b14b-4ccf-af64-8ccd9364aa83" />
+
+
+---
+### Demo
+
+![Uploading cv-demo (1).gif…]()
+
 
 
 ### Project Info
@@ -36,7 +54,7 @@ A single‑page, responsive curriculum vitae built using only HTML and CSS. The 
 ---
 
 
-**Live Link:** `https://your-vercel-deployment-url.vercel.app/`
+**Live Link:** https://responsive-cv-omega.vercel.app
 
 
 
