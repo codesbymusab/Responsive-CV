@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html >
+
+<head >
+    <title>CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    
+</head>
+
+<div class="modal" id="contactModal">
+    <div class="modal-content">
+        <div class="close-btn" onclick="closeContactForm()">✖</div>
+        <h2>Contact Me</h2>
+
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+<script>
+    function downloadCV() {
+        window.print();
+    }
+
+    function openContactForm() {
+        document.getElementById("contactModal").style.display = "flex";
+    }
+
+    function closeContactForm() {
+        document.getElementById("contactModal").style.display = "none";
+    }
+
+    function sendMessage() {
+        const name = document.getElementById("name").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        const mailtoLink = `mailto:muhammadmusab2005@gmail.com
+            ?subject=CV Contact from ${name}
+            &body=Email: ${email}%0D%0A%0D%0A${message}`;
+
+        window.location.href = mailtoLink;
+        closeContactForm();
+    }
+</script>
+
+<body>
+    <div class="a4-page">
+        <div class="side-bar">
+            <div class="profile">
+                <img class="profile-picture" src="pictures/profile-pic.jpeg">
+                <p class="name">Muhammad Musab</p>
+                <p class="profession">Web/App Developer</p>
+            </div>
+            <div class="contact-info">
+                <p class="titles">Contact Info</p>
+                <div class="contact-row">
+                    <i class="material-icons">person</i>
+                    <p>Male</p>
+                </div>
+
+                <div class="contact-row">
+                    <i class="material-icons">today</i>
+                    <p>Jan 11,2005</p>
+                </div>
+
+                <div class="contact-row">
+                    <i class="material-icons">mail</i>
+                    <p style="max-width: 150px; overflow-wrap: break-word;">muhammadmusab2005@gmail.com</p>
+                </div>
+
+                <div class="contact-row">
+                    <i class="material-icons">phone</i>
+                    <p>+92 30 68422 727</p>
+                </div>
+
+                <div class="contact-row">
+                    <i class="material-icons">room</i>
+                    <p>Lahore, Pakistan</p>
+                </div>
+            </div>
+
+            <div class="languages">
+                <p class="titles">
+                    Languages
+                </p>
+                <div class="language-row">
+                    <p>English</p>
+                    <div class="progress-container">
+                        <div class="progress-fill" style="--target-width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div class="language-row">
+                    <p>Urdu</p>
+                    <div class="progress-container">
+                        <div class="progress-fill" style="--target-width: 100%;"></div>
+                    </div>
+                </div>
+
+                <div class="language-row">
+                    <p>Arabic</p>
+                    <div class="progress-container">
+                        <div class="progress-fill" style="--target-width: 80%;"></div>
+                    </div>
+                </div>
+
+
+                <div class="buttons">
+                    <button class="contact-button" onclick="openContactForm()">
+                        Contact Form
+                    </button>
+
+                    <button class="download-button" onclick="downloadCV()">
+                        Download
+                    </button>
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+        <div class="main-section">
+            <div class="about-me">
+                <p class="titles">About Me</p>
+                <p>I am a motivated and detail-oriented computer science student with a strong interest in software development and problem-solving. I enjoy building practical projects using modern technologies and continuously improving my skills. I am always eager to learn, adapt, and take on new challenges that help me grow both technically and personally.</p>
+            </div>
+            <div class="edu-pro-row">
+                <div class="education">
+
+                    <div class="education-details">
+                        <p class="titles" style="margin-bottom: 20px;"> Education</p>
+                        <p>Bachelors In Computer Science</p>
+                        <p>FAST NUCES Lahore</p>
+                        <p>2023-2027</p>
+                    </div>
+                    <div class="education-details">
+                        <p>FSC Pre-Engineering</p>
+                        <p>Punjab College, Muslim Town</p>
+                        <p>2021-2022</p>
+                    </div>
+                    <div class="education-details">
+                        <p>Matriculation</p>
+                        <p>The Punjab School</p>
+                        <p>2019-2020</p>
+                    </div>
+
+                </div>
+                <div class="Projects">
+
+                    <div class="project-details">
+                        <p class="titles" style="margin-bottom: 20px;">Featured Projects</p>
+                        <p>1.AniFast</p>
+                        <p> Anime Recommendation Website</p>
+                        <p> Next JS</p>
+                    </div>
+                    <div class="project-details">
+                        <p>2.Studdy Buddy</p>
+                        <p> Student Companion App</p>
+                        <p> Flutter</p>
+                    </div>
+                    <div class="project-details">
+                        <p>3.Expert ERP</p>
+                        <p> ERP System</p>
+                        <p> .NET Framework</p>
+                    </div>
+                </div>
+            </div>
+            <div class="professional-skills">
+                <p class="titles">
+                    Professional Skills
+                </p>
+
+                <div>
+                    <p class="skill-name" style="display: inline-block;">DART</p>
+                    <div class="progress-container" style="display: inline-block; width: 80%;">
+                        <div class="progress-fill" style="--target-width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="skill-name" style="display: inline-block;">FLUTTER</p>
+                    <div class="progress-container" style="display: inline-block; width: 80%;">
+                        <div class="progress-fill" style="--target-width: 80%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="skill-name" style="display: inline-block;">HTML</p>
+                    <div class="progress-container" style="display: inline-block; width: 80%;">
+                        <div class="progress-fill" style="--target-width: 80%;"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="skill-name" style="display: inline-block;">CSS</p>
+                    <div class="progress-container" style="display: inline-block; width: 80%;">
+                        <div class="progress-fill" style="--target-width: 80%;"></div>
+                        <div class="progress-fill"></div>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="skill-name" style="display: inline-block;">JAVASCRIPT</p>
+                    <div class="progress-container" style="display: inline-block; width: 80%;">
+                        <div class="progress-fill" style="--target-width: 80%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="skill-name" style="display: inline-block;">PYTHON</p>
+                    <div class="progress-container" style="display: inline-block; width: 80%;">
+                        <div class="progress-fill" style="--target-width: 80%;"></div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+            <footer class="intrests">
+                <p class="titles">
+                    Interests
+                </p>
+                <div class="intrest-row">
+
+                    <p class="intrest-name">
+                        Travelling
+                    </p>
+                    <p class="intrest-name">
+                        Gaming
+                    </p>
+                    <p class="intrest-name">
+                        Developing
+                    </p>
+                    <p class="intrest-name">
+                        Coding
+                    </p>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
