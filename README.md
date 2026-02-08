@@ -1,1 +1,70 @@
-# Responsive-CV
+### Project Title
+
+**Responsive CV — HTML & CSS**
+
+---
+### Demoo
+
+![cv-demo](https://github.com/user-attachments/assets/66f967e9-e6c8-4615-aef9-e838505f9f3c)
+
+
+### Project Info
+
+**Description**  
+A single‑page, responsive curriculum vitae built using only HTML and CSS. The layout is A4‑friendly for printing, includes a dark and light theme toggle, and supports mobile and desktop breakpoints. This README follows the assignment requirements for the course assignment. 
+
+**Features**  
+- Header with name, title, and photo  
+- About Me, Education, Skills, Experience / Projects, Contact Information, Footer  
+- Dark / Light theme toggle with persistence (localStorage)  
+- Responsive layout using Flexbox and CSS Grid  
+- Downloadable/printable A4 layout and print‑friendly adjustments
+
+---
+
+### Technologies
+
+**Built with**  
+- **HTML5**  
+- **CSS3** (CSS variables, Flexbox, Grid, media queries)  
+- **Vanilla JavaScript** (theme toggle and persistence)
+
+**Optional tools used during development**  
+- Git and GitHub for version control  
+- Vercel for deployment
+
+---
+
+
+**Live Link:** `https://your-vercel-deployment-url.vercel.app/`
+
+
+
+---
+
+### File Structure
+
+```
+cv-repo-name/
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── theme-toggle.js
+├── images/
+│   └── profile.jpg
+└── README.md
+```
+
+**Notes**  
+- Put per‑component CSS variables in `:root` and add a `[data-theme="light"]` override for the light theme.  
+- Use `localStorage` to persist the theme choice and initialize from `prefers-color-scheme` on first load.
+
+---
+
+### Author
+
+**Name:** Muhammad  Musab
+**Roll No:** 23L-0806
+
+---
